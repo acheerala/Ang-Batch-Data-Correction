@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "angular-guard-app", "angular-guard-app.csproj", "{B1F5156B-9C7B-42CA-BC0B-210C07EB022D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ang-Batch-Data-Correction", "Ang-Batch-Data-Correction.csproj", "{B1F5156B-9C7B-42CA-BC0B-210C07EB022D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
