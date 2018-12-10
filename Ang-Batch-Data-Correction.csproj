@@ -25,8 +25,6 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\shared\" />
-    <Folder Include="ClientApp\src\app\shared\_pipes\" />
-    <Folder Include="ClientApp\src\app\shared\_directives\" />
     <Folder Include="ClientApp\src\app\shared\_guards\" />
     <Folder Include="ClientApp\src\app\shared\_services\" />
     <Folder Include="ClientApp\src\app\login\" />
