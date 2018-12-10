@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
-import { SuperDuperComponent } from './super-duper/super-duper.component';
+import { AdminComponent } from './admin/admin.component';
 
 @NgModule({
   imports: [
     CommonModule,
     DashboardRoutingModule
   ],
-  declarations: [DashboardHomeComponent, SuperDuperComponent]
+  declarations: [DashboardHomeComponent, AdminComponent]
 })
 export class DashboardModule { }

@@ -1,7 +1,7 @@
-import { NgModule } from '@angular/core';
+﻿import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
-import { SuperDuperComponent } from './super-duper/super-duper.component';
+import { AdminComponent } from './admin/admin.component';
 import { AdminGuard } from '../shared/_guards/admin.guard';
 
 const routes: Routes = [
@@ -10,8 +10,8 @@ const routes: Routes = [
         canActivateChild: [AdminGuard],
         children: [
         {
-                path: 'super-duper',
-                component: SuperDuperComponent 
+                path: 'admin',
+                component: AdminComponent 
                 
         }
         ]
