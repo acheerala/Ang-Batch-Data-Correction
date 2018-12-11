@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AuthGuard} from './shared/_guards/auth.guard';
 import { AdminGuard } from './shared/_guards/admin.guard';
 import { AuthService } from './shared/_services/auth.service';
+import { AuthenticationService } from './shared/_services/authentication.service';
 
 
 @NgModule({
@@ -24,9 +25,10 @@ import { AuthService } from './shared/_services/auth.service';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule 
   ],
-  providers: [ AuthGuard, AdminGuard , AuthService],
+  providers: [ AuthGuard, AdminGuard , AuthService, AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
